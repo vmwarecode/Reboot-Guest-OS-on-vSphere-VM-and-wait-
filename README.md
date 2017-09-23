@@ -1,1 +1,0 @@
-# Reboot-Guest-OS-on-vSphere-VM-and-wait-
