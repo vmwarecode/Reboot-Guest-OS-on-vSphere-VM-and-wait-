@@ -51,3 +51,6 @@ if (timedOut) {
 	errorCode = "Timed out! Host '" + vm.name + "' is still not running after " + guestRebootTimeoutMinutes + " minutes!";
 	throw errorCode;
 }
+
+//wait until vm is back online
+System.getModule("com.vmware.library.vc.vm.tools").vim3WaitForPrincipalIP(vm, guestRebootTimeoutMinutes, 5);
